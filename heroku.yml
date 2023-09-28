@@ -1,3 +1,5 @@
 build:
   docker:
-      asaaq: Dockerfile
+    asaaq: Dockerfile
+run:
+  asaaq: python3 -m main.py
