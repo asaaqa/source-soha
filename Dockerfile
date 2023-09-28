@@ -1,17 +1,10 @@
-FROM python:3.9
-
+FROM debian:latest
+FROM python:3.9.6-slim-buster
 RUN apt update && apt upgrade -y
-RUN apt install python3-pip -y
-RUN apt install ffmpeg -y
-
-RUN curl -sL https://deb.nodesource.com/setup_17.x | bash -
+RUN apt install git curl python3-pip ffmpeg -y
+RUN pip3 install -U pip
 RUN apt-get install -y nodejs
-RUN npm i -g npm
-
-RUN mkdir /app/
 COPY . /app
 WORKDIR /app
-
-RUN pip3 install --upgrade pip
 RUN pip3 install -U -r requirements.txt
-CMD bash main.py
+CMD python3 -m main.py
