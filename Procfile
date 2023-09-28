@@ -1,1 +1,1 @@
-worker: python3 main.py
+asaaq: python3 main.py
