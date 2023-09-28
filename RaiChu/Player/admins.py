@@ -38,7 +38,7 @@ async def update_admin(client, message):
     )
 
 
-@Client.on_message(command(["skip", f"skip@{BOT_USERNAME}", "vskip", "هات اللي بعدو"]) & other_filters)
+@Client.on_message(command(["skip", f"skip@{BOT_USERNAME}", "vskip", "تخطي"]) & other_filters)
 @authorized_users_only
 async def skip(client, m: Message):
 
@@ -143,7 +143,7 @@ async def resume(client, m: Message):
 
 
 @Client.on_message(
-    command(["mute", f"mute@{BOT_USERNAME}", "vmute", "شد ميوت"]) & other_filters
+    command(["mute", f"mute@{BOT_USERNAME}", "اصمت", "قف"]) & other_filters
 )
 @authorized_users_only
 async def mute(client, m: Message):
@@ -161,7 +161,7 @@ async def mute(client, m: Message):
 
 
 @Client.on_message(
-    command(["unmute", f"unmute@{BOT_USERNAME}", "vunmute", "فك ميوت"]) & other_filters
+    command(["unmute", f"unmute@{BOT_USERNAME}", "استمر", "كمل"]) & other_filters
 )
 @authorized_users_only
 async def unmute(client, m: Message):
