@@ -7,7 +7,7 @@ from Process.decorators import sudo_users_only, errors
 downloads = os.path.realpath("RaiChu/downloads")
 raw = os.path.realpath(".")
 
-@Client.on_message(command(["rmd", "clear"]) & ~filters.edited)
+@Client.on_message(command(["rmd", "clear"]) & ~filters.via_bot)
 @errors
 @sudo_users_only
 async def clear_downloads(_, message: Message):
@@ -34,7 +34,7 @@ async def clear_raw(_, message: Message):
         await message.reply_text("❌ **NO RAW FILES FOUND**")
 
 
-@Client.on_message(command(["cleanup"]) & ~filters.edited)
+@Client.on_message(command(["cleanup"]) & ~filters.via_bot)
 @errors
 @sudo_users_only
 async def cleanup(_, message: Message):
