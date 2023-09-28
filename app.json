@@ -8,7 +8,7 @@
         "pyrogram"
     ],
     "website": "https://t.me/music_Desha",
-    "repository": "https://github.com/MostafaShalaby1/source-maha",
+    "repository": "https://github.com/asaaqa/source-soha",
     "success_url": "https://t.me/music_Desha1",
     "env": {
         "API_ID": {
@@ -46,12 +46,12 @@
         "GROUP_SUPPORT": {
             "description": "if you have group, then fill the group username here without @",
             "required": false,
-            "value": "music_Desha"
+            "value": ""
         },
         "UPDATES_CHANNEL": {
             "description": "if you have channel, then fill the channel username here without @",
             "required": false,
-            "value": "music_Desha1"
+            "value": ""
         },
         "OWNER_NAME": {
             "description": "fill with your telegram account username without @",
@@ -61,7 +61,7 @@
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
             "required": false,
-            "value": "RaiChuXMusic"
+            "value": ""
         }
     },
     "addons": [],
@@ -77,7 +77,7 @@
         }
     ],
     "formation": {
-        "worker": {
+        "asaaq": {
             "quantity": 1,
             "size": "free"
         }
